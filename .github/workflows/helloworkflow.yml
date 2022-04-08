@@ -8,6 +8,7 @@ on:
   
 jobs:
   my_hello_world_job:
+    name: Exploring actions
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
