@@ -1,20 +1,13 @@
 name: Workflow Hello World
-on:
-  push:
-    branches: [ helloworldbranch ]
- # Permite lanzar a mano el workflow
-  workflow_dispatch:
-
+'on':
+  push: null
+  branches:
+    - helloworldbranch
+  workflow_dispatch: null
 jobs:
-  my_hello_world_job:
- # Define el runner
-    runs-on: ubuntu-latest
+  my_hello_world_job: null
+  runs-on: ubuntu-latest
   steps:
- # Step1: Descarga el repositorio
     - uses: actions/checkout@v2
- # Step2: Muestra mensaje
     - name: Ejecutar comandos
-  run: |
-    echo ============
-    echo Hello World!
-    echo ============
+  run: echo hello world
